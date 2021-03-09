@@ -1,10 +1,15 @@
-.App {
+.App-logo {
   text-align: center;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
 }
 
-.App-logo {
-  height: 40vmin;
+.App-footer {
+  height: 10vmin;
   pointer-events: none;
+  display: block;
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -52,6 +57,38 @@
     blink-caret .75s step-end infinite;
   animation-delay: 3.5s;
   animation-fill-mode: forwards; 
+}
+
+.App-about {
+  pointer-events: none;
+}
+
+.App-about .content{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.App-about h1 {
+  padding: 10px;
+  font-size: 64px;
+  letter-spacing: .12em;
+}
+
+.App-about h2 {
+  padding-left: 15px;
+  font-size: 32px;
+  letter-spacing: .12em;
+}
+
+.App-about p {
+  font-size: 18px;
+}
+
+.App-about li {
+  letter-spacing: .10em;
+  word-spacing: .30em;
+  line-height: 1.85em;
+  font-size: 20px;
 }
 
 /* The typing effect */
