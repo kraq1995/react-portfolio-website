@@ -16,7 +16,7 @@ export default class Header extends Component {
         <li>Wide technological stack: </li>
         <li>Exprerienced in highest mid/senior level with in full-stack development.</li>       
         </ol>
-        <h2>We are proud of we did in 2020:</h2>
+        <h2>We are proud of things we did in 2020:</h2>
         <ul>
         <li>Escape room management system</li>
         <li>Full stack IoT measurement system</li>

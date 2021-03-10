@@ -1,9 +1,51 @@
-.App-logo {
-  text-align: center;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
+@media screen and (max-width: 1023px) {
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App-about{
+    min-height: 100vh;
+  }
+
+  .App-techstack{
+    min-height: 100vh;
+  }
+
+  .App-footer{
+    max-height: 20vh;
+  }
+
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: normal;
+    text-align: center;
+    letter-spacing: .15em; /* Adjust as needed */
+    line-height: 1.25em;
+  }
+
+  .typewriter h2 {
+    font-size: 0.75em;
+    visibility: hidden;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation:
+      fadeIn 3.5s,
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards; 
+  }
 }
+
+@media screen and (min-width: 1024px){
 
 .App-footer {
   height: 10vmin;
@@ -12,10 +54,18 @@
   text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-techstack{
+  background-color: whitesmoke;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-techstack .container{
+  width: 90%;
+  margin: 0 auto;
 }
 
 .App-header {
@@ -34,18 +84,20 @@
 }
 
 .typewriter h1 {
+  font-size: 1.6em;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
+  line-height: 1.8em;
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
 
 .typewriter h2 {
-  font-size: 18px;
+  font-size: .75em;
   visibility: hidden;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -69,14 +121,14 @@
 }
 
 .App-about h1 {
-  padding: 10px;
-  font-size: 64px;
+  padding: .6em;
+  font-size: 4em;
   letter-spacing: .12em;
 }
 
 .App-about h2 {
-  padding-left: 15px;
-  font-size: 32px;
+  padding-left: .75em;
+  font-size: 2.5em;
   letter-spacing: .12em;
 }
 
@@ -89,6 +141,21 @@
   word-spacing: .30em;
   line-height: 1.85em;
   font-size: 20px;
+}
+}
+
+.App-techstack h1{
+  padding: .6em;
+  color: black;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.App-techstack h3{
+  color: black;
+  text-transform: uppercase;
+  font-size: .6em;
+  margin-bottom: 1em;
 }
 
 /* The typing effect */
@@ -107,7 +174,6 @@
   }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: orange; }
